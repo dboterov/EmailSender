@@ -1,0 +1,37 @@
+<style type="text/css">
+    body, html, .body {
+        /*background: #f3f3f3 !important; */
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #444;
+    }
+</style>
+<container>
+    <spacer size="16"></spacer>
+    <row>
+        <columns>
+            <center>
+                <img src="https://www.matisses.co/360/360_150h.png" alt="logo">
+            </center>
+        </columns>
+    </row>
+    <row>
+        <columns large="8">
+            <table style="width: 100%"><tr><td style="width: 100%; text-align: center;"><br/><h1>Nueva factura de venta creada</h1></td></tr></table>
+        </columns>
+        <columns large="8">
+            <table style="width: 100%">
+                <tr>
+                    <td style="width: 100%; text-align: center;">
+                        <br/>
+                        Se ha creado la factura <b>${invoiceNumber}</b> a nombre del cliente <b>${customerName}</b> con NIT <b>${customerId}</b> por el usuario ${username}.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100%; text-align: center;">
+                        Para ver los detalles de la factura, por favor haga clic <a href="http://360.matisses.co:8080/360/ventas/facturas/consulta/?nroFactura=${invoiceNumber}">aqu&iacute;</a>
+                    </td>
+                </tr>
+            </table>
+        </columns>
+    </row>
+</container>
